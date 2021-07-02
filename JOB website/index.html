@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Recruitment Group </title>
+</head>
+
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/stylesheet">
+
+<style>
+    body {
+        font-family: 'Baloo Bhaina 2', cursive;
+        color: rgba(60, 128, 255, 0.788);
+        margin: 0px;
+        padding: 0px;
+        background: url("BG.png");
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+
+
+    }
+
+    .left {
+        position: absolute;
+        left: 23px;
+        top: 2px;
+        display: inline-block;
+   
+    }
+
+    .left img {
+        width: 100px;
+        margin: 18px;
+
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 15px;
+        color: white;
+        margin: -29px;
+    }
+
+    .mid {
+        display: block;
+        width: 33%;
+        margin: 0px auto;
+        /* border: 2px solid rgb(89, 120, 223); */
+    }
+
+    .right {
+        position: absolute;
+        right: 47px;
+        top: 17px;
+        display: inline-block;
+        /* border: 2px solid rgb(255, 218, 8); */
+        background-color: chocolate;
+    }
+
+    .nevbar {
+        display: inline-block;
+    }
+
+    .nevbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .nevbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 4px;
+    }
+
+    .nevbar li a:hover,
+    .nevbar li a.active {
+        text-decoration: underline;
+        color: chocolate;
+    }
+
+    .btn {
+        font-family: 'Baloo Bhaina 2', cursive;
+        margin: 0px 9px;
+        background-color: rgb(100 216 255);
+        color: white;
+        padding: 4px 14px;
+        /* border: 2px solid #f19c25; */
+        border-radius: 12px;
+        font-size: 17px;
+        cursor: pointer;
+        height: 39px;
+
+
+    }
+
+    .btn:hover {
+        background-color: chocolate;
+    }
+
+    .container {
+        /* border: 2px solid blue; */
+        margin: 152px 105px;
+        padding: 40px 2px;
+        width: 33%;
+        border-radius: 28px;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 340px;
+        padding: 6px;
+        /* border: 1px solid yellow; */
+        margin: 10px auto;
+        border-radius: 20px;
+        font-size: 17px;
+        font-family: 'Baloo Bhaina 2', cursive;
+        background-color: #5f3b3b;
+    }
+
+    .container h2 {
+        text-align: center;
+
+    }
+
+    .container button {
+        display: block;
+        width: 53%;
+        margin: auto;
+        background-color: #5f3b3b;
+        
+    }
+    .body btn{
+        background-color: chocolate;
+    }
+</style>
+
+<body>
+
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="logo.png" alt="">
+            <Div>The Recruitment Group</Div>
+        </div>
+        <!-- mid box for nevbar -->
+        <div class="mid">
+
+            <ul class="nevbar">
+
+                <Li> <a href="#" class="Active">Home</a> </Li>
+                <Li> <a href="#">About Us</a> </Li>
+                <Li> <a href="#">Clients</a> </Li>
+                <Li> <a href="#">Contact Us</a> </Li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+
+        <div class="right">
+            <button class="btn">Apply a job</button>
+            <button class="btn">Post a job</button>
+
+        </div>
+
+
+    </header>
+    <div class="container">
+
+        <h2>Find a job</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Job type">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Category">
+
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Location">
+            </div>
+            <button class="btn">Search</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
